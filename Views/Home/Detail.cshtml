@@ -1,0 +1,40 @@
+﻿@* @model IEnumerable<WebApplication8.Models.DataWeb> *@
+    @model DataWeb
+
+<div>
+    <h4>Sonuçlar:</h4>
+    <div>
+        @* @if (Model != null && Model.Any())
+        {
+            @if (Model.Count() != 0)
+            {
+                foreach (var data in Model)
+                { *@
+                    <div>
+                        <p>ID: @Model.Id</p>
+            <p>Makalenin Adı: @Model.Name</p>
+            <p>Yazarlar: @Model.PublisherName</p>
+            <p>Anahtar Kelimeler: @Model.AnahtarKelimeler</p>
+            <p>Özet: @Model.Ozet</p>
+            <p>Tarih: @Model.Date</p>
+            <p>Tür: @Model.Genre</p>
+            <p>Yayıncı: @Model.Description</p>
+            <p>Referanslar: @Model.Referanslar</p>
+            <p>Doi: @Model.doiNumber</p>
+            <p>URL: @Model.URL</p>
+            <p>PDFURL: @Model.PDFURL</p>
+            <p>---------------------------------------------------------------------------------------------------------</p>
+                       
+                    </div>
+                @* }
+
+            }
+            else
+            {
+                <p>No Data</p>
+            }
+        } *@
+
+
+
+    </div>

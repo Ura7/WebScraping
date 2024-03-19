@@ -1,0 +1,44 @@
+﻿@model IEnumerable<WebApplication8.Models.DataWeb>
+
+
+
+
+<h2>Veritabanı Verileri</h2>
+
+@* <form asp-controller="Search" asp-action="Index" method="get">
+	<input type="text" name="veri" placeholder="Search" />
+	<button type="submit">Ara</button>
+</form> *@
+
+
+<ul>
+	@if(Model!=null)
+	{
+		
+	
+	@foreach(var a in Model)
+	{
+		<div>
+				<p>ID: @a.Id </p>
+				<p>Yayın Adı: @a.Name</p>
+				<p>Yazarlar: @a.PublisherName</p>
+				<p>Özet: @a.Ozet</p>
+				<p>Anahtar Kelimeler: @a.AnahtarKelimeler </p>
+				<p>Tür: @a.Genre </p>
+				<p>Referanslar: @a.Referanslar </p>
+				<p>Tarih: @a.Date</p>
+				<p>DOI: @a.doiNumber</p>
+				<p>URL: @a.URL</p>
+				<p>PDFURL: @a.PDFURL</p>
+				<P>--------------------------------------------------------------------------------------------------------------</P>
+
+		</div>
+		
+	}
+	}
+
+
+	
+
+
+</ul>
